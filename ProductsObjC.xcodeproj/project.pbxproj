@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		664443FE1F084348000A5A7B /* UIViewController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 664443FD1F084348000A5A7B /* UIViewController+Extensions.m */; };
 		669BABB01F06C94600465572 /* CoraDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 669BABAF1F06C94600465572 /* CoraDataManager.m */; };
 		669BABB31F06CB1D00465572 /* ProductsObjC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 669BABB11F06CB1D00465572 /* ProductsObjC.xcdatamodeld */; };
 		669BABC81F06E15700465572 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 669BABC71F06E15700465572 /* CacheManager.m */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		664443FC1F084348000A5A7B /* UIViewController+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extensions.h"; sourceTree = "<group>"; };
+		664443FD1F084348000A5A7B /* UIViewController+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extensions.m"; sourceTree = "<group>"; };
 		669BABAE1F06C94600465572 /* CoraDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoraDataManager.h; sourceTree = "<group>"; };
 		669BABAF1F06C94600465572 /* CoraDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoraDataManager.m; sourceTree = "<group>"; };
 		669BABB21F06CB1D00465572 /* ProductsObjC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductsObjC.xcdatamodel; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 			children = (
 				66FA43B11F069FCD0066A750 /* UICollectionView+Extensions.h */,
 				66FA43B21F069FCD0066A750 /* UICollectionView+Extensions.m */,
+				664443FC1F084348000A5A7B /* UIViewController+Extensions.h */,
+				664443FD1F084348000A5A7B /* UIViewController+Extensions.m */,
 				669BABCC1F06E44900465572 /* UIImageView+Network.h */,
 				669BABCD1F06E44900465572 /* UIImageView+Network.m */,
 				669BABD61F07C94000465572 /* UIImage+Size.h */,
@@ -318,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664443FE1F084348000A5A7B /* UIViewController+Extensions.m in Sources */,
 				66FA43B31F069FCD0066A750 /* UICollectionView+Extensions.m in Sources */,
 				669BABD81F07C94000465572 /* UIImage+Size.m in Sources */,
 				669BABCE1F06E44900465572 /* UIImageView+Network.m in Sources */,
