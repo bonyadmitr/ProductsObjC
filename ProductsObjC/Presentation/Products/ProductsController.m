@@ -12,6 +12,7 @@
 #import "Product.h"
 #import "ProductDetailController.h"
 #import "ProductsService.h"
+#import "UIViewController+Extensions.h"
 
 @interface ProductsController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -31,6 +32,7 @@ static NSString * const productSegueId = @"product";
     [ProductsService.sharedInstance getAllWithCompletionHandler:^(NSArray *array, NSError *error) {
         STRONG_SELF;
         if (error) {
+            [sself showError:error];
             NSLog(@"Error: %@", error);
             return;
         }

@@ -9,6 +9,7 @@
 #import "ProductDetailController.h"
 #import "ProductView.h"
 #import "ProductsService.h"
+#import "UIViewController+Extensions.h"
 
 @interface ProductDetailController ()
 
@@ -29,6 +30,7 @@
     [ProductsService.sharedInstance getProductForId:self.product.productId withCompletionHandler:^(Product *product, NSError *error) {
         STRONG_SELF;
         if (error) {
+            [sself showError:error];
             NSLog(@"Error: %@", error);
             return;
         }

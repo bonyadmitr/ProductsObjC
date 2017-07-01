@@ -59,8 +59,7 @@
         
         ProductCoraData *cdProduct = products.firstObject;
         if (!cdProduct) {
-            // TODO: error
-            completion(nil, [NSError errorWithDomain:@"not found" code:1 userInfo:nil]);
+            completion(nil, [NSError errorWithDomain:@"Internal error" code:1 userInfo:nil]);
         }
         completion(cdProduct, nil);
     }];
