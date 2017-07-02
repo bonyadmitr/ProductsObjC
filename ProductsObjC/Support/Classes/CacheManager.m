@@ -11,7 +11,6 @@
 
 @interface CacheManager ()
 @property (strong, nonatomic) NSCache *cache;
-@property (strong, nonatomic) dispatch_queue_t queue;
 @end
 
 @implementation CacheManager
@@ -24,7 +23,6 @@ static NSTimeInterval cacheTime = 604800;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[CacheManager alloc] init];
         sharedInstance.cache = [[NSCache alloc] init];
-//        sharedInstance.queue = dispatch_queue_create("com.zdaecq.CacheManager", DISPATCH_QUEUE_SERIAL);
     });
     return sharedInstance;
 }
