@@ -31,6 +31,7 @@ static NSTimeInterval cacheTime = 604800;
 
 - (void)resetCache {
     [[NSFileManager defaultManager] removeItemAtPath:[self cacheDirectory] error:nil];
+    [self.cache removeAllObjects];
 }
 
 - (NSString *)cacheDirectory {
