@@ -7,3 +7,7 @@
 - used SDWebImage for better cache and optimization
 - used PromiseKit for better code style, than GCD
 - used UIStackView for layout
+
+## There are
+- scrollView for detail product. You can see it in landscape
+- ...
